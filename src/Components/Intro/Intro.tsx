@@ -7,7 +7,7 @@ import { useSectionInView } from "../../Hooks/Hooks";
 import { useActiveSectionContext } from "../../Context/ActiveSectionContext";
 
 const Intro = () => {
-  const { ref } = useSectionInView(null);
+  const { ref } = useSectionInView("About");
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   return (
     <section
