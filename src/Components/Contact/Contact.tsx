@@ -34,12 +34,7 @@ const Contact = () => {
         </a>
         or throught this form.
       </p>
-      <form
-        className="mt-10 flex flex-col gap-4"
-        action={(formData) => {
-          console.log(FormData);
-        }}
-      >
+      <form className="mt-10 flex flex-col gap-4">
         <input
           className="h-14 rounded-lg border-black p-4 text-purple-dark "
           type="email"
