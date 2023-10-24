@@ -5,7 +5,10 @@ import { ActiveSectionContextProvider } from "./Context/ActiveSectionContext";
 
 const App = () => {
   return (
-    <div className="bg-background text-font bg-hero-pattern ">
+    <div
+      className=" text-font   bg-black 
+    "
+    >
       <div
         className="w-[15rem] h-[15rem] rounded-full bg-[#d84343] absolute blur-[10rem] top-10
       sm:left-1/8 sm:top-[4rem]"

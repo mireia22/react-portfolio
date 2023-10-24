@@ -9,6 +9,7 @@ module.exports = {
       font: "#f4e8fa",
       white: "#ffffff",
       black: "#000000",
+      greenblue: "#03858c",
       purple: {
         light: "#e9d5ff",
         medium: "#a855f7",
@@ -20,6 +21,7 @@ module.exports = {
         narrow: ["Archivo Narrow", "sans-serif"],
         mohave: ["Mohave", "sans-serif"],
         fjalla: ["Fjalla One", "sans-serif"],
+        antonio: ["Antonio", "sans-serif"],
       },
       backgroundImage: {
         "hero-pattern":

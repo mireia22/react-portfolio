@@ -39,7 +39,7 @@ const Header = () => {
                 {link.name.toUpperCase()}
                 {link.name === activeSection && (
                   <motion.span
-                    className="bg-purple-dark h-7  rounded-full w-[5.5rem] absolute -z-20 bg-opacity-90"
+                    className="bg-greenblue h-7  rounded-full w-[5.5rem] absolute -z-20 bg-opacity-50"
                     layoutId="activeSection"
                     transition={{
                       type: "spring",

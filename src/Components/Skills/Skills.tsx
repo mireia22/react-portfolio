@@ -21,19 +21,23 @@ const Skills = () => {
   const { ref } = useSectionInView("Skills");
 
   return (
-    <section ref={ref} id="skills" className="scroll-mt-28 ">
-      <SectionHeading>My Skills</SectionHeading>
+    <section
+      ref={ref}
+      id="skills"
+      className="scroll-mt-[2rem] bg-hero-pattern bg-greenblue bg-fixed min-w-full bg-opacity-40 sm:scroll-mt-[8rem] "
+    >
+      <SectionHeading>Skills</SectionHeading>
 
       {SKILLS_DATA.map((skill, index) => (
         <div
           key={index}
-          className="flex-col scroll-mt-28 p-3 mb-5 text-center "
+          className="flex flex-col scroll-mt-28 p-3 mb-5 text-center items-center "
         >
           <h1 className="text-xl mb-3 uppercase text-purple-light tracking-widest">
             {skill.name}
           </h1>
           <ul
-            className={`flex flex-wrap justify-center gap-8 sm:w-[30rem] ${
+            className={`flex flex-wrap justify-center gap-8 sm:w-[30rem] p-4 ${
               index === SKILLS_DATA.length - 1 ? "opacity-70" : ""
             }`}
           >
@@ -46,7 +50,7 @@ const Skills = () => {
                 viewport={{
                   once: true,
                 }}
-                className="items-center text-center flex flex-col gap-1"
+                className="items-center text-center justify-center flex flex-col gap-1 "
                 custom={subIndex}
               >
                 <h3 className="mb-1">{subSkill.name}</h3>

@@ -25,8 +25,12 @@ const Studies = () => {
   }, []);
 
   return (
-    <section id="studies" ref={ref} className="scroll-mt-28">
-      <SectionHeading>My Studies</SectionHeading>
+    <section
+      id="studies"
+      ref={ref}
+      className="scroll-mt-30 p-4 sm:scroll-mt-[6rem]"
+    >
+      <SectionHeading>Studies</SectionHeading>
       <VerticalTimeline lineColor="#f4e8fa">
         {STUDIES_DATA.map((study, index) => (
           <React.Fragment key={index}>

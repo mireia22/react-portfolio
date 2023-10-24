@@ -10,8 +10,8 @@ const Contact = () => {
     <motion.section
       ref={ref}
       id="contact"
-      className="scroll-mt-28 mb-20
-    sm:mb-28 w-[min(100%, 38rem)] text-center 
+      className="scroll-mt-30 mb-10
+     w-[min(100%, 38rem)] text-center p-6
     "
       initial={{
         opacity: 0,
@@ -26,34 +26,35 @@ const Contact = () => {
         once: true,
       }}
     >
-      <SectionHeading>Contact Me</SectionHeading>
-      <p className="text-font -mt-5">
-        Please contact me directly at
+      <SectionHeading>Contact</SectionHeading>
+      <p className="text-font mt-5">
+        Please contact me directly at{" "}
         <a href="mailto:mireiagarciaferrer22@gmail.com" className="underline">
           mireiagarciaferrer22@gmail.com
-        </a>
+        </a>{" "}
         or throught this form.
       </p>
       <form className="mt-10 flex flex-col gap-4">
         <input
-          className="h-14 rounded-lg border-black p-4 text-purple-dark "
+          className="h-14 rounded-lg  p-4 text-purple-dark "
           type="email"
           required
+          maxLength={500}
           placeholder="Your email"
         />
         <textarea
-          className="h-52 rounded-lg border-black p-4 text-purple-dark"
+          className="h-52 rounded-lg  p-4 text-purple-dark"
           placeholder="Your message"
           required
           maxLength={500}
         ></textarea>
         <button
           type="submit"
-          className="group self-center flex items-center justify-center transition-all outline-none h-[3rem] w-[6rem]
-           bg-gray-600 p-3 rounded-full text-white
+          className="group self-center flex items-center justify-center transition-all outline-none px-3 py-2 gap-2
+           bg-gray-600  rounded-full text-white bg-greenblue
            
-           focus:scale-110 
-           hover:bg-gray-900  00 hover:scale-110 active:scale-105"
+          
+           hover:bg-white hover:text-greenblue  "
         >
           Submit{" "}
           <FaPaperPlane className="text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />
