@@ -58,7 +58,7 @@ const ProjectTemplate = ({
           <img
             src={preview}
             alt={title}
-            className="  object-contain rounded  grayscale hover:grayscale-0 hover:scale-110"
+            className="  object-contain rounded  grayscale hover:grayscale-0 hover:scale-110 cursor-pointer"
           />
         </div>
         <div className="flex gap-7">

@@ -48,7 +48,7 @@ export const STUDIES_DATA = [
       1: "React",
       2: "React styles",
       3: "React with Typescript",
-      4: "Introductn to testing with React",
+      4: "Introduction to testing with React",
     },
     icon: React.createElement(BsKeyboard),
   },

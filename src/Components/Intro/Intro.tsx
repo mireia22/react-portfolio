@@ -67,7 +67,7 @@ const Intro = () => {
       </article>
 
       <motion.article
-        className="flex flex-col p-4 gap-4 sm:h-full  tracking-wider sm:mb-[19rem] justify-end font-medium items-end sm:items-start sm:gap-6 sm:justify-end"
+        className="flex flex-col p-4 gap-4 sm:h-full  tracking-wider sm:mb-[21rem] justify-end font-medium items-end sm:items-start sm:gap-6 sm:justify-end"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.1 }}
