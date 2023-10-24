@@ -28,7 +28,7 @@ const Studies = () => {
     <section
       id="studies"
       ref={ref}
-      className="scroll-mt-30 p-4 sm:scroll-mt-[6rem]"
+      className="scroll-mt-30 bg-stars-pattern w-full h-full sm:scroll-mt-[6rem]"
     >
       <SectionHeading>Studies</SectionHeading>
       <VerticalTimeline lineColor="#f4e8fa">

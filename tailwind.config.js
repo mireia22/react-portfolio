@@ -26,6 +26,8 @@ module.exports = {
       backgroundImage: {
         "hero-pattern":
           "url('https://www.transparenttextures.com/patterns/shley-tree-1.png')",
+        "stars-pattern":
+          "url('https://www.transparenttextures.com/patterns/stardust.png')",
       },
     },
   },

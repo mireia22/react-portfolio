@@ -10,8 +10,8 @@ const Contact = () => {
     <motion.section
       ref={ref}
       id="contact"
-      className="scroll-mt-30 mb-10
-     w-[min(100%, 38rem)] text-center p-6
+      className="scroll-mt-30 mb-10 bg-stars-pattern
+    w-full text-center p-6
     "
       initial={{
         opacity: 0,
@@ -34,16 +34,16 @@ const Contact = () => {
         </a>{" "}
         or throught this form.
       </p>
-      <form className="mt-10 flex flex-col gap-4">
+      <form className="mt-10 flex flex-col items-center gap-4 sm:min-w-[60rem]">
         <input
-          className="h-14 rounded-lg  p-4 text-purple-dark "
+          className="h-14 w-[22rem] rounded-lg  p-4 text-purple-dark "
           type="email"
           required
           maxLength={500}
           placeholder="Your email"
         />
         <textarea
-          className="h-52 rounded-lg  p-4 text-purple-dark"
+          className="h-52 w-[22rem] rounded-lg  p-4 text-purple-dark"
           placeholder="Your message"
           required
           maxLength={500}
