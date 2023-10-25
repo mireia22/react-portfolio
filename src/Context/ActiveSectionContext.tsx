@@ -19,7 +19,7 @@ const ActiveSectionContext = createContext<ActiveSectionContextType | null>(
 export const ActiveSectionContextProvider = ({
   children,
 }: ActiveSectionContextProviderProps) => {
-  const [activeSection, setActiveSection] = useState<SectionName>("About");
+  const [activeSection, setActiveSection] = useState<SectionName | null>(null);
   const [timeOfLastClick, setTimeOfLastClick] = useState(0);
   return (
     <ActiveSectionContext.Provider
@@ -40,7 +40,7 @@ export const useActiveSectionContext = () => {
 
   if (context === null) {
     throw new Error(
-      "useActiveSectionContext must be useed within a ActiveSectionContextProveider"
+      "useActiveSectionContext must be used within a ActiveSectionContextProveider"
     );
   }
   return context;

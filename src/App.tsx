@@ -6,18 +6,9 @@ import { ActiveSectionContextProvider } from "./Context/ActiveSectionContext";
 const App = () => {
   return (
     <div
-      className=" text-font   bg-black 
+      className=" text-font   bg-black  bg-stars-pattern 
     "
     >
-      <div
-        className="w-[15rem] h-[15rem] rounded-full bg-[#d84343] absolute blur-[10rem] top-10
-      sm:left-1/8 sm:top-[4rem]"
-      ></div>
-      <div
-        className="w-[15rem] h-[15rem] rounded-full bg-[#b043d8] absolute right-0 blur-[10rem] 
-      sm:right-1/8 sm:top-[20rem] "
-      ></div>
-
       <div className=" tracking-wide">
         <ActiveSectionContextProvider>
           <Header />

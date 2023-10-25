@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { LINKS } from "../../data/data";
-// import { useActiveSectionContext } from "../../Context/ActiveSectionContext";
 import { GiMountainCave } from "react-icons/gi";
 import { useActiveSectionContext } from "../../Context/ActiveSectionContext";
 const Header = () => {

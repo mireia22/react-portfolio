@@ -35,7 +35,7 @@ const ProjectTemplate = ({
         gap-6  items-center text-center max-w-[20rem]  "
       >
         <div>
-          <h2 className="text-xl font-bold mb-2 text-font">
+          <h2 className="text-xl font-bold mb-2 text-font group-hover:scale-110 transition">
             {title.toUpperCase()}
           </h2>
           <p className="text-sm leading-8 sm:text-start ">{description}</p>
@@ -58,7 +58,7 @@ const ProjectTemplate = ({
           <img
             src={preview}
             alt={title}
-            className="  object-contain rounded  grayscale hover:grayscale-0 hover:scale-110 cursor-pointer"
+            className="  object-contain rounded  grayscale group-hover:grayscale-0 group-hover:scale-110 cursor-pointer"
           />
         </div>
         <div className="flex gap-7">
