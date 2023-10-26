@@ -1,6 +1,6 @@
 const BeforeWaveDivider = () => {
   return (
-    <div className=" -mt-2 left-0 overflow-hidden   custom-shape-divider-bottom-1698310266 w-[100vw] ">
+    <div className=" sm:-mt:6 left-0 overflow-hidden   custom-shape-divider-bottom-1698310266 w-[100vw] ">
       <svg
         data-name="Layer 1"
         xmlns="http://www.w3.org/2000/svg"

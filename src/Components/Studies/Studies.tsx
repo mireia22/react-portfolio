@@ -11,19 +11,6 @@ import "react-vertical-timeline-component/style.min.css";
 const Studies = () => {
   const { ref } = useSectionInView("Studies");
 
-  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 400);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsSmallScreen(window.innerWidth < 400);
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
   return (
     <section
       id="studies"
@@ -39,7 +26,6 @@ const Studies = () => {
               contentStyle={{
                 background: "#f4e8fa",
                 border: "1px solid rgba(0,0,0,0.1)",
-                maxWidth: isSmallScreen ? "" : "60rem",
                 padding: "1rem",
               }}
               contentArrowStyle={{
@@ -56,7 +42,7 @@ const Studies = () => {
               <h2 className="text-2xl mb-3 font-semibold capitalize text-font">
                 {study.title}
               </h2>
-              <p className="!mt-1 text-purple-dark font-bold">
+              <p className=" text-purple-dark ">
                 {Object.values(study.description).join(", ") + "."}
               </p>
             </VerticalTimelineElement>

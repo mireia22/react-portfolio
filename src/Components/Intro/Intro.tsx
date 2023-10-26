@@ -15,7 +15,7 @@ const Intro = () => {
       ref={ref}
       id="home"
       className="font-fjalla min-h-screen min-w-full tracking-widest bg-hero-pattern bg-background bg-opacity-80 bg-fixed 
-       scroll-mt-[100rem] z-[998]   
+       scroll-mt-[100rem] z-[998]   relative
        flex  items-center text-center justify-center flex-wrap 
        sm:grid sm:grid-cols-2 
       "
@@ -74,7 +74,7 @@ const Intro = () => {
         </motion.div>
       </article>
       <motion.article
-        className="flex flex-col gap-4  tracking-wider sm:h-full sm:mb-[20vh] font-medium items-center sm:items-start sm:gap-6 sm:justify-end"
+        className="flex flex-col gap-4  tracking-wider sm:h-full sm:mb-[46vh] font-medium items-center sm:items-start sm:gap-6 sm:justify-end"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.1 }}
@@ -118,8 +118,8 @@ const Intro = () => {
           <a
             href="https://github.com/mireia22"
             target="_blank"
-            className="bg-greenblue bg-opacity-60 text-font text-2xl border-2 border-font border-opacity-60 flex 
-            focus:scale-[1.15] hover:scale-[1.15] hover:text-greenblue hover:bg-font hover:border-greenblue  rounded-full
+            className="bg-greenblue bg-opacity-60 text-font border-2 border-font border-opacity-60 p-1 flex rounded-full
+             hover:text-greenblue hover:bg-font hover:border-greenblue transition
                       cursor-pointer  border-black/10 w-10 h-10 items-center justify-center"
           >
             <BsGithub />

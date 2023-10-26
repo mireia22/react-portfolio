@@ -13,11 +13,11 @@ const Projects = () => {
     <section
       ref={ref}
       id="projects"
-      className="scroll-mt-[2rem] mt-16 bg-hero-pattern bg-background bg-opacity-80 bg-fixed min-w-full sm:scroll-mt-[6rem]"
+      className="relative scroll-mt-[1rem] mt-16 bg-hero-pattern bg-background bg-opacity-80 bg-fixed min-w-full sm:scroll-mt-[6rem]"
     >
       <BeforeWaveDivider />
       <SectionHeading>projects</SectionHeading>
-      <ul className="flex flex-col gap-4 items-center p-4">
+      <ul className="flex flex-col gap-4 items-center p-4 mb-20">
         {PROJECTS.map((project, index) => (
           <React.Fragment key={index}>
             <ProjectTemplate {...project} />

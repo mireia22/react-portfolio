@@ -26,7 +26,7 @@ const Skills = () => {
     <section
       ref={ref}
       id="skills"
-      className="scroll-mt-[2rem] bg-hero-pattern bg-greenblue bg-fixed min-w-full bg-opacity-40 sm:scroll-mt-[8rem] "
+      className=" relative scroll-mt-[2rem] bg-hero-pattern bg-greenblue bg-fixed min-w-full bg-opacity-40 sm:scroll-mt-[8rem] "
     >
       <BeforeWaveDivider />
       <SectionHeading>Skills</SectionHeading>
@@ -36,7 +36,7 @@ const Skills = () => {
           key={index}
           className="flex flex-col scroll-mt-28 p-3 mb-5 text-center items-center "
         >
-          <h1 className="text-xl mb-3 uppercase text-purple-light tracking-widest">
+          <h1 className="text-xl mb-3 uppercase tracking-widest font-semibold">
             {skill.name}
           </h1>
           <ul

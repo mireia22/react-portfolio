@@ -17,7 +17,7 @@ const About = () => {
       <article className=" flex flex-col flex-wrap p-4 ">
         <p className="mb-3 ">
           I'm a junior{" "}
-          <span className=" font-bold text-purple-light">
+          <span className="font-bold font-antonio tracking-widest text-purple-light">
             Frontend Developer{" "}
           </span>
           with a burning desire to expand my horizons and become a Full-Stack
@@ -27,14 +27,20 @@ const About = () => {
 
         <p>
           As someone{" "}
-          <span className=" font-bold text-purple-light">open-minded</span> and
-          actively curious, I thrive on embracing diversity and absorbing new
-          cultures and perspectives.
+          <span className=" font-bold font-antonio tracking-widest text-greenblue">
+            open-minded
+          </span>{" "}
+          and actively curious, I thrive on embracing diversity and absorbing
+          new cultures and{" "}
+          <span className=" font-bold font-antonio tracking-widest text-greenblue">
+            perspectives
+          </span>
+          .
         </p>
         <p>🌱</p>
         <p>
           My{" "}
-          <span className=" font-bold text-purple-light">
+          <span className=" font-bold font-antonio tracking-widest text-purple-light">
             professional objective
           </span>{" "}
           is to continuously evolve as a developer, learn from experienced

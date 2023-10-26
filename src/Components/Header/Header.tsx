@@ -13,12 +13,12 @@ const Header = () => {
   return (
     <header
       className="z-[999] fixed left-1/2 -translate-x-1/2 w-full border-b-2 border-purple-light border-opacity-20
-      text-sm bg-black bg-opacity-40 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] text-font    sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full sm:text-base  "
+      text-sm bg-black bg-opacity-40 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] text-font    sm:top-6 sm:h-[3.25rem] sm:w-[38rem] sm:rounded-full sm:text-base  "
     >
       <nav>
         <ul
           className="grid grid-cols-3 items-end gap-y-4 py-2
-          sm:flex sm:flex-nowrap sm:gap-5 sm:px-8 sm:justify-between sm:items-end"
+          sm:flex sm:flex-nowrap sm:gap-1 sm:px-5 sm:justify-around sm:items-end"
         >
           <a href="#home" className=" flex text-3xl justify-center">
             <GiMountainCave className="self-center" />
@@ -33,7 +33,7 @@ const Header = () => {
               <a
                 href={link.hash}
                 onClick={() => handleSetActiveSection(link.name)}
-                className="text-[0.8rem] flex items-center justify-center  tracking-widest "
+                className="text-[0.8rem] flex items-center justify-center py-[0.1rem] px-5 tracking-widest hover:bg-greenblue hover:bg-opacity-30 hover:rounded-full   "
               >
                 {link.name.toUpperCase()}
                 {link.name === activeSection && (
