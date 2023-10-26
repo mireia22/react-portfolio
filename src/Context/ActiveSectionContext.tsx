@@ -1,13 +1,13 @@
 import React, { useState, createContext, useContext } from "react";
-import type { SectionName } from "../Types/Types";
+import { SectionName } from "../Hooks/Hooks";
 
 type ActiveSectionContextProviderProps = {
   children: React.ReactNode;
 };
 
 type ActiveSectionContextType = {
-  activeSection: SectionName;
-  setActiveSection: React.Dispatch<React.SetStateAction<SectionName>>;
+  activeSection: SectionName | null;
+  setActiveSection: React.Dispatch<React.SetStateAction<SectionName | null>>;
   timeOfLastClick: number;
   setTimeOfLastClick: React.Dispatch<React.SetStateAction<number>>;
 };
