@@ -8,38 +8,40 @@ import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const { ref } = useSectionInView("Contact");
-  const [message, setMessage] = useState(null);
+  const [message, setMessage] = useState<string | null>(null);
 
   const SERVICE_KEY = import.meta.env.VITE_SERVICE_KEY;
   const TEMPLATE_KEY = import.meta.env.VITE_TEMPLATE_KEY;
   const USER_KEY = import.meta.env.VITE_PUBLIC_KEY;
 
-  const form = useRef();
+  const form = useRef<HTMLFormElement | null>(null);
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        `${SERVICE_KEY}`,
-        `${TEMPLATE_KEY}`,
-        form.current,
-        `${USER_KEY}`
-      )
-      .then(
-        (result) => {
-          setMessage("Message sent");
-          console.log(result.text);
-          console.log("message sent");
-          clearForm();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
-  const clearForm = () => {
-    form.current.reset();
+    if (form.current) {
+      emailjs
+        .sendForm(
+          `${SERVICE_KEY}`,
+          `${TEMPLATE_KEY}`,
+          form.current,
+          `${USER_KEY}`
+        )
+        .then(
+          (result) => {
+            setMessage("Message sent");
+            console.log(result.text);
+            console.log("message sent");
+            clearForm();
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    }
+    const clearForm = () => {
+      form.current && form.current.reset();
+    };
   };
 
   return (
@@ -82,7 +84,7 @@ const Contact = () => {
           required
           maxLength={500}
           placeholder="Your Name"
-          className="h-12 w-[22rem] rounded-lg  p-4 text-purple-dark"
+          className="h-12 w-[20rem] rounded-lg  p-4 text-purple-dark"
         />
         <input
           type="email"
@@ -90,12 +92,12 @@ const Contact = () => {
           required
           maxLength={500}
           placeholder="Your Email"
-          className="h-12 w-[22rem] rounded-lg  p-4 text-purple-dark "
+          className="h-12 w-[20rem] rounded-lg  p-4 text-purple-dark "
         />
         <textarea
           name="message"
-          className="h-52 w-[22rem] rounded-lg  p-4 text-purple-dark"
-          placeholder="Your message"
+          className="h-52 w-[20rem] rounded-lg  p-4 text-purple-dark"
+          placeholder="Your Message"
           required
           maxLength={500}
         />

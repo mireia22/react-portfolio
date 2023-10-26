@@ -1,7 +1,10 @@
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import { useActiveSectionContext } from "../Context/ActiveSectionContext";
-import type { SectionName } from "../Types/Types";
+
+import { LINKS } from "../data/data";
+
+export type SectionName = (typeof LINKS)[number]["name"];
 
 export const useSectionInView = (sectionName: SectionName, threshold = 0.5) => {
   const { setActiveSection, timeOfLastClick } = useActiveSectionContext();

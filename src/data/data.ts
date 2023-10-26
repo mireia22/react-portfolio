@@ -27,7 +27,7 @@ export const LINKS = [
     name: "Contact",
     hash: "#contact",
   },
-] as const;
+];
 
 export const STUDIES_DATA = [
   {

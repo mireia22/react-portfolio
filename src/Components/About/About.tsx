@@ -7,14 +7,14 @@ const About = () => {
   return (
     <motion.section
       ref={ref}
-      className=" text-center w-[35rem] h-full  leading-8 scroll-mt-[2rem] sm:scroll-mt-[12rem] z-100 "
+      className=" text-center max-w-[35rem] h-full  leading-8 scroll-mt-[2rem] sm:scroll-mt-[12rem] z-100 "
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
       id="about"
     >
       <SectionHeading>About</SectionHeading>
-      <article className=" ">
+      <article className=" flex flex-col flex-wrap p-4 ">
         <p className="mb-3 ">
           I'm a junior{" "}
           <span className=" font-bold text-purple-light">
