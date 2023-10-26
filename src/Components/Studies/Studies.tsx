@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import SectionHeading from "../SectionHeading/SectionHeading";
 import { STUDIES_DATA } from "../../data/data";
 import { useSectionInView } from "../../Hooks/Hooks";
