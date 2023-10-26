@@ -14,7 +14,6 @@ const Home = () => {
       <About />
       <SectionDivider />
       <Skills />
-      <SectionDivider />
       <Studies />
       <Projects />
       <SectionDivider />
