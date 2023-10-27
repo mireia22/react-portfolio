@@ -2,8 +2,7 @@ import SectionHeading from "../SectionHeading/SectionHeading";
 import { useSectionInView } from "../../Hooks/Hooks";
 import { SKILLS_DATA } from "../../data/data";
 import { motion } from "framer-motion";
-import BeforeWaveDivider from "../SectionDivider/BeforeWaveDivider";
-import AfterWaveDivider from "../SectionDivider/AfterWaveDivider";
+import WaveDivider from "../SectionDivider/WaveDivider";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -26,15 +25,15 @@ const Skills = () => {
     <section
       ref={ref}
       id="skills"
-      className=" relative scroll-mt-[2rem] bg-hero-pattern bg-greenblue bg-fixed min-w-full bg-opacity-40 sm:scroll-mt-[8rem] "
+      className="   bg-hero-pattern bg-greenblue bg-fixed min-w-full bg-opacity-40 sm:scroll-mt-[8rem] "
     >
-      <BeforeWaveDivider />
+      <WaveDivider before />
       <SectionHeading>Skills</SectionHeading>
 
       {SKILLS_DATA.map((skill, index) => (
         <div
           key={index}
-          className="flex flex-col scroll-mt-28 p-3 mb-5 text-center items-center "
+          className="flex flex-col p-3 mb-5 text-center items-center "
         >
           <h1 className="text-xl mb-3 uppercase tracking-widest font-semibold">
             {skill.name}
@@ -69,7 +68,7 @@ const Skills = () => {
           </ul>
         </div>
       ))}
-      <AfterWaveDivider />
+      <WaveDivider before={false} />
     </section>
   );
 };

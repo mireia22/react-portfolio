@@ -27,11 +27,11 @@ const ProjectTemplate = ({
     <motion.li
       ref={ref}
       style={{ scale: scaleProgress, opacity: opacityProgress }}
-      className="flex flex-col gap-8 items-center text-center bg-black border-purple-dark border-6 border-opacity-30 border-4 rounded-md p-4 w-100 h-100 
+      className="flex flex-col gap-8 items-center text-center bg-black border-purple-dark cursor-pointer border-6 border-opacity-30 border-4 rounded-md p-4 w-100 h-100 
      group  sm:w-[35rem] sm:h-[18rem] sm:flex-row sm:justify-between sm:gap-8 sm:px-8 sm:py-0"
     >
       <article
-        className="flex flex-col  
+        className="flex flex-col  d
         gap-6  items-center text-center max-w-[20rem]  "
       >
         <div>

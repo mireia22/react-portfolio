@@ -48,8 +48,8 @@ const Contact = () => {
     <motion.section
       ref={ref}
       id="contact"
-      className="scroll-mt-30 mb-10 bg-stars-pattern
-    w-full text-center p-6
+      className="scroll-mt-[2rem] mb-10 bg-stars-pattern
+    w-full text-center p-6 items-center flex flex-col
     "
       initial={{
         opacity: 0,
@@ -65,18 +65,21 @@ const Contact = () => {
       }}
     >
       <SectionHeading>Contact</SectionHeading>
-      <p className="text-font mt-5">
+      <p className="text-font mt-4  text-center">
         Please contact me directly at{" "}
-        <a href="mailto:mireiagarciaferrer22@gmail.com" className="underline">
+        <a
+          href="mailto:mireiagarciaferrer22@gmail.com"
+          className="underline hover:text-greenblue"
+        >
           mireiagarciaferrer22@gmail.com
-        </a>{" "}
-        or throught this form.
+        </a>
       </p>
+      <p className="text-font text-center">or throught this form.</p>
 
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="mt-10 flex flex-col items-center gap-4 sm:min-w-[60rem]"
+        className="mt-8 flex flex-col font-antonio items-center gap-4 sm:min-w-[60rem]"
       >
         <input
           type="text"
@@ -84,7 +87,7 @@ const Contact = () => {
           required
           maxLength={500}
           placeholder="Your Name"
-          className="h-12 w-[20rem] rounded-lg  p-4 text-purple-dark"
+          className="h-12 w-[18rem] sm:w-[24rem] rounded-lg  p-4 text-purple-dark tracking-wider"
         />
         <input
           type="email"
@@ -92,11 +95,11 @@ const Contact = () => {
           required
           maxLength={500}
           placeholder="Your Email"
-          className="h-12 w-[20rem] rounded-lg  p-4 text-purple-dark "
+          className="h-12 sm:w-[24rem] w-[18rem] rounded-lg  p-4 text-purple-dark tracking-wider "
         />
         <textarea
           name="message"
-          className="h-52 w-[20rem] rounded-lg  p-4 text-purple-dark"
+          className="h-52 w-[18rem] sm:w-[24rem] rounded-lg  p-4 text-purple-dark tracking-wider"
           placeholder="Your Message"
           required
           maxLength={500}
@@ -111,7 +114,7 @@ const Contact = () => {
           type="submit"
           value="Send"
           className="group self-center flex items-center justify-center transition-all outline-none px-3 py-2 gap-2
-           bg-gray-600  rounded-full text-white bg-greenblue
+           bg-gray-600  rounded-full text-white bg-greenblue tracking-wider
            hover:bg-white hover:text-greenblue  "
         >
           Submit

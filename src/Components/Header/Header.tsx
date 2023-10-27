@@ -33,7 +33,7 @@ const Header = () => {
               <a
                 href={link.hash}
                 onClick={() => handleSetActiveSection(link.name)}
-                className="text-[0.8rem] flex items-center justify-center py-[0.1rem] px-5 tracking-widest hover:bg-greenblue hover:bg-opacity-30 hover:rounded-full   "
+                className="text-[0.8rem] flex items-center justify-center sm:py-[0.1rem] py-[0.2rem]  sm:px-5 tracking-widest hover:bg-greenblue hover:bg-opacity-30 sm:hover:rounded-full    "
               >
                 {link.name.toUpperCase()}
                 {link.name === activeSection && (

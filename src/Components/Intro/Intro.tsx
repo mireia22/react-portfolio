@@ -5,7 +5,6 @@ import { HiDownload } from "react-icons/hi";
 import { BsGithub } from "react-icons/bs";
 import { useSectionInView } from "../../Hooks/Hooks";
 import { useActiveSectionContext } from "../../Context/ActiveSectionContext";
-import AfterWaveDivider from "../SectionDivider/AfterWaveDivider";
 
 const Intro = () => {
   const { ref } = useSectionInView("Home");
@@ -14,20 +13,20 @@ const Intro = () => {
     <section
       ref={ref}
       id="home"
-      className="font-fjalla min-h-screen min-w-full tracking-widest bg-hero-pattern bg-background bg-opacity-80 bg-fixed 
-       scroll-mt-[100rem] z-[998]   relative
-       flex  items-center text-center justify-center flex-wrap 
+      className="font-fjalla w-[100vw] min-h-[90vh] sm:w-[60vw] sm:rounded-b-[15rem]  tracking-widest bg-hero-pattern bg-background bg-opacity-80 bg-fixed 
+       scroll-mt-[100rem] z-[998]    py-4
+       flex  items-center text-center justify-center flex-wrap sm:border-l-4  sm:border-r-4  border-font/50
        sm:grid sm:grid-cols-2 
       "
     >
       <article
-        className="flex flex-col mt-8 w-full
-      sm:p-6 sm:text-4xl sm:gap-3   "
+        className="flex flex-col mt-8 w-full items-center
+      sm:p-6 sm:text-4xl sm:gap-3 sm:mt-0  "
       >
         <motion.p
           className="
-          text-3xl
-          mt-[6rem]  sm:text-end"
+          text-3xl mt-[3.5rem]
+          sm:mt-[6rem]  sm:text-end"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ type: "tween", duration: 0.3 }}
@@ -63,7 +62,7 @@ const Intro = () => {
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1.1 }}
           transition={{ type: "tween", duration: 0.5 }}
-          className="flex justify-center sm:justify-end"
+          className="flex justify-center items-center w-[80vw] sm:w-full sm:justify-end"
         >
           <img
             className=" w-[200px] shadow-xs sm:origin-bottom-left"
@@ -74,7 +73,7 @@ const Intro = () => {
         </motion.div>
       </article>
       <motion.article
-        className="flex flex-col gap-4  tracking-wider sm:h-full sm:mb-[46vh] font-medium items-center sm:items-start sm:gap-6 sm:justify-end"
+        className="flex flex-col gap-4  tracking-wider  sm:h-[450px] font-medium items-center sm:items-start sm:gap-6 sm:justify-end"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.1 }}
@@ -126,7 +125,6 @@ const Intro = () => {
           </a>
         </div>
       </motion.article>
-      <AfterWaveDivider />
     </section>
   );
 };

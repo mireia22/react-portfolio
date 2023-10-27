@@ -3,8 +3,7 @@ import SectionHeading from "../SectionHeading/SectionHeading";
 import { PROJECTS } from "../../data/data";
 import ProjectTemplate from "./ProjectTemplate";
 import { useSectionInView } from "../../Hooks/Hooks";
-import BeforeWaveDivider from "../SectionDivider/BeforeWaveDivider";
-import AfterWaveDivider from "../SectionDivider/AfterWaveDivider";
+import WaveDivider from "../SectionDivider/WaveDivider";
 
 const Projects = () => {
   const { ref } = useSectionInView("Projects");
@@ -15,7 +14,7 @@ const Projects = () => {
       id="projects"
       className="relative scroll-mt-[1rem] mt-16 bg-hero-pattern bg-background bg-opacity-80 bg-fixed min-w-full sm:scroll-mt-[6rem]"
     >
-      <BeforeWaveDivider />
+      <WaveDivider before/>
       <SectionHeading>projects</SectionHeading>
       <ul className="flex flex-col gap-4 items-center p-4 mb-20">
         {PROJECTS.map((project, index) => (
@@ -24,7 +23,7 @@ const Projects = () => {
           </React.Fragment>
         ))}
       </ul>
-      <AfterWaveDivider />
+      <WaveDivider before = {false} />
     </section>
   );
 };

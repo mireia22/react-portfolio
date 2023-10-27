@@ -5,14 +5,17 @@ import Projects from "../Projects/Projects";
 import Skills from "../Skills/Skills";
 import Studies from "../Studies/Studies";
 import Contact from "../Contact/Contact";
+import WaveDivider from "../SectionDivider/WaveDivider";
 
 const Home = () => {
   return (
     <main className="flex flex-col items-center ">
       <Intro />
+
       <SectionDivider />
       <About />
       <SectionDivider />
+      <WaveDivider before />
       <Skills />
       <Studies />
       <Projects />

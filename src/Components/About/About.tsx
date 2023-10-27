@@ -8,9 +8,9 @@ const About = () => {
     <motion.section
       ref={ref}
       className=" text-center max-w-[35rem] h-full  leading-8 scroll-mt-[2rem] sm:scroll-mt-[12rem] z-100 "
-      initial={{ opacity: 0, y: 100 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.175 }}
+      initial={{ opacity: 0, y: 100, scale: 0.5 }}
+      animate={{ opacity: 1, y: 0, scale: 1 }}
+      transition={{ delay: 0.2 }}
       id="about"
     >
       <SectionHeading>About</SectionHeading>
