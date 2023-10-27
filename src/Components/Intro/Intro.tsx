@@ -21,7 +21,7 @@ const Intro = () => {
     >
       <article
         className="flex flex-col mt-8 w-full items-center
-      sm:p-6 sm:text-4xl sm:gap-3 sm:mt-0  "
+      sm:p-6 sm:text-4xl sm:gap-3 sm:mt-0  sm:items-end"
       >
         <motion.p
           className="

@@ -65,6 +65,7 @@ const ProjectTemplate = ({
           <a
             className="cursor-pointer flex gap-2 items-center text-center  hover:underline hover:text-greenblue"
             href={code}
+            target="_blank"
           >
             <FaGithubSquare />
             Code
@@ -72,6 +73,7 @@ const ProjectTemplate = ({
           <a
             className="cursor-pointer flex gap-2 items-center text-center hover:underline hover:text-greenblue"
             href={app}
+            target="_blank"
           >
             <AiFillEye />
             Visit
